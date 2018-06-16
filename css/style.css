@@ -115,11 +115,17 @@ body{
 
 .btn-white::after {
   background: #fff;
+
 }
 
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes moveInLeft{
